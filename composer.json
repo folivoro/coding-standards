@@ -1,0 +1,30 @@
+{
+  "name": "folivoro/coding-standards",
+  "description": "Opinionated code styles for folivoro projects 🦥 👨‍🏫",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "folivoro",
+      "email": "hello@folivoro.com"
+    }
+  ],
+  "require": {
+    "folivoro/composer-dropin-installer": "^0.0",
+    "laravel/pint": "^1.29"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "folivoro/composer-dropin-installer": true
+    }
+  },
+  "extra": {
+    "dropin": {
+      "file": "pint.json",
+      "target-path": "."
+    }
+  }
+}
